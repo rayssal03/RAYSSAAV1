@@ -55,10 +55,10 @@ body {
   margin-bottom: 25px;
   text-transform: uppercase;
   letter-spacing: 4px;
+  color: #e5f7ff;
   text-shadow:
-    0 0 10px #00d9ff,
-    0 0 20px #00d9ff,
-    0 0 40px rgba(0, 217, 255, 0.6);
+    0 0 6px rgba(0, 217, 255, 0.5),
+    0 0 12px rgba(0, 217, 255, 0.4);
 }
 
 .description {
@@ -81,7 +81,7 @@ button {
   border-radius: 14px;
   color: white;
   cursor: pointer;
-  background: linear-gradient(90deg, #007cf0, #00d9ff);
+  background: linear-gradient(90deg, #007cf0, #02a6c3);
   box-shadow:
     0 0 15px rgba(0, 217, 255, 0.5),
     0 0 30px rgba(0, 217, 255, 0.3);
@@ -91,7 +91,7 @@ button {
 button:hover {
   transform: scale(1.05);
   box-shadow:
-    0 0 25px rgba(0, 217, 255, 0.8),
+    0 0 25px rgba(1, 171, 201, 0.8),
     0 0 50px rgba(0, 217, 255, 0.4);
 }
 
@@ -107,7 +107,7 @@ button:hover {
   font-size: 2.5rem;
   margin-bottom: 15px;
   color: white;
-  text-shadow: 0 0 10px #00d9ff;
+  text-shadow: 0 0 10px #028298;
 }
 
 #resultado {
@@ -139,7 +139,7 @@ button:hover {
 .card:hover {
   transform: translateY(-8px);
   box-shadow:
-    0 12px 35px rgba(0, 217, 255, 0.25);
+    0 12px 35px rgba(0, 217, 255, 0.667);
 }
 
 .card img {
@@ -153,21 +153,23 @@ button:hover {
 }
 
 .card h3 {
-  color: #00d9ff;
+  color: #03a3c0;
   margin-bottom: 16px;
   font-size: 1.4rem;
+  text-shadow: 0 0 4px rgba(0, 217, 255, 0.3);
 }
 
 .card p {
   margin-bottom: 10px;
   font-size: 0.9rem;
   line-height: 1.5;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.1);
 }
 
 .card a {
   display: inline-block;
   margin-top: 14px;
-  color: #00d9ff;
+  color: #019fbb;
   text-decoration: none;
   font-weight: bold;
 }

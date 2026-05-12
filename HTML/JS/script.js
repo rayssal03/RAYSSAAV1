@@ -5,12 +5,10 @@ const section = document.querySelector("#asteroides-section");
 
 /* imagens diferentes */
 const imagens = [
-  "https://images-assets.nasa.gov/image/PIA12235/PIA12235~medium.jpg",
-  "https://images-assets.nasa.gov/image/PIA01492/PIA01492~medium.jpg",
-  "https://images-assets.nasa.gov/image/PIA03519/PIA03519~medium.jpg",
-  "https://images-assets.nasa.gov/image/PIA04200/PIA04200~medium.jpg",
-  "https://images-assets.nasa.gov/image/PIA03254/PIA03254~medium.jpg",
-  "https://images-assets.nasa.gov/image/PIA18033/PIA18033~medium.jpg"
+  "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-1012318340.jpg?crop=1.00xw:0.889xh;0,0.0617xh&resize=1200:*",
+  "https://imagenes.eltiempo.com/uploads/2024/01/23/65b046b060e1d.jpeg",
+  "https://img.freepik.com/premium-photo/asteroid_94937-2217.jpg",
+  "https://live-production.wcms.abc-cdn.net.au/2c42c2d85195735d3c49de88a10c6a16?impolicy=wcms_crop_resize&cropH=1078&cropW=1916&xPos=0&yPos=0&width=862&height=485"
 ];
 
 /* data atual */
@@ -57,7 +55,7 @@ async function carregarAsteroides() {
         const imagem = imagens[contador % imagens.length];
         contador++;
 
-        const cor = perigoso ? "#ff3b3b" : "#00ff88";
+        const cor = perigoso ? "#690000" : "#00bb64";
 
         container.innerHTML += `
           <div class="card" style="border-top: 4px solid ${cor}">
@@ -72,7 +70,7 @@ async function carregarAsteroides() {
               <p>
                 <strong>Risco:</strong>
                 <span style="color:${cor}">
-                  ${perigoso ? "⚠️ PERIGOSO" : "🟢 Seguro"}
+                  ${perigoso ? "PERIGOSO" : " Seguro"}
                 </span>
               </p>
 
