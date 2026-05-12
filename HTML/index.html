@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asteroides NASA</title>
+
+  <!-- Fonte futurista -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Tela inicial -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <p class="subtitle">EXPLORANDO O UNIVERSO COM A NASA</p>
+
+      <h1>ASTEROIDES<br>PRÓXIMOS DA TERRA</h1>
+
+      <p class="description">
+        Dados em tempo real sobre objetos espaciais monitorados próximos ao planeta Terra.
+      </p>
+
+      <button id="btn">CARREGAR ASTEROIDES →</button>
+    </div>
+  </section>
+
+  <!-- Seção dos asteroides -->
+  <section id="asteroides-section" class="hidden">
+    <h2>OBJETOS DETECTADOS</h2>
+    <p id="resultado"></p>
+    <div id="container"></div>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
